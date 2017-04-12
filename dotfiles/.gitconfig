@@ -14,8 +14,6 @@
 [color]
 	ui = true
 [merge]
-[mergetool "Kaleidoscope"]
-[difftool "Kaleidoscope"]
 [difftool]
 [mergetool]
 [diff]
