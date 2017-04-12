@@ -1,0 +1,23 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = George Perez
+	email = george.perez.marrero@gmail.com
+	signingkey = 623A1F97
+[core]
+	excludesfile = /Users/George/.gitignore_global
+	editor = subl -n -w
+[alias]
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	st = status
+[color]
+	ui = true
+[merge]
+[mergetool "Kaleidoscope"]
+[difftool "Kaleidoscope"]
+[difftool]
+[mergetool]
+[diff]
+[commit]
+	gpgsign = true
