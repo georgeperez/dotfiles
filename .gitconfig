@@ -13,12 +13,11 @@
 	st = status
 [color]
 	ui = true
-[merge]
 [difftool]
 [mergetool]
 [diff]
     tool = opendiff
 [commit]
-	gpgsign = true
+    gpgsign = true
 [merge]
-	tool = opendiff
+    tool = opendiff
