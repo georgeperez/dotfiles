@@ -17,5 +17,8 @@
 [difftool]
 [mergetool]
 [diff]
+    tool = opendiff
 [commit]
 	gpgsign = true
+[merge]
+	tool = opendiff
