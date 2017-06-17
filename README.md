@@ -1,2 +1,0 @@
-# dotfiles
-George's dotfiles
