@@ -2,12 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/George/.oh-my-zsh
+export ZSH=/Users/george/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+DEFAULT_USER="George"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,29 +52,30 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(brew git osx zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='subl -w'
- else
-   export EDITOR='subl -w'
- fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#    export EDITOR='vim'
+# else
+#    export EDITOR='subl -w'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+# export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -83,3 +85,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ZSH Completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# rbenv shims
+export PATH="$HOME/.rbenv/bin:$PATH"
+export RBENV_ROOT=/usr/local/var/rbenv
+
+if [ -f $(brew --prefix)/etc/zsh_completion ]; then
+  source $(brew --prefix)/etc/zsh_completion
+fi
+
+export PATH="$HOME/.fastlane/bin:$PATH"
+eval "$(rbenv init -)"
+
