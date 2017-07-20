@@ -1,0 +1,56 @@
+{
+	"auto_indent": true,
+	"binary_file_patterns":
+	[
+		"*.out",
+		"*.app",
+		"*.o",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/GitHub (SL).tmTheme",
+	"defaultLineEnding": "unix",
+	"default_encoding": "UTF-8",
+	"detect_indentation": false,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".sass-cache",
+		"_site",
+		".ink_cache",
+		".tmp"
+	],
+	"font_face": "Menlo",
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"show_tab_close_buttons": false,
+	"sidebar_size_12": true,
+	"smart_indent": true,
+	"status_bar_brighter": true,
+	"tab_size": 4,
+	"tabs_padding_small": true,
+	"tabs_small": true,
+	"theme": "Afterglow.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
