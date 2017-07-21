@@ -43,7 +43,7 @@ ZSH_THEME="agnoster"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git osx zsh-syntax-highlighting)
+plugins=(brew bundler git osx zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,14 +89,5 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # ZSH Completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# rbenv shims
-export PATH="$HOME/.rbenv/bin:$PATH"
-export RBENV_ROOT=/usr/local/var/rbenv
-
-if [ -f $(brew --prefix)/etc/zsh_completion ]; then
-  source $(brew --prefix)/etc/zsh_completion
-fi
-
-export PATH="$HOME/.fastlane/bin:$PATH"
-eval "$(rbenv init -)"
+source ~/.bash_profile
 
