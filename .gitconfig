@@ -1,22 +1,22 @@
 # This is Git's per-user configuration file.
 [user]
-	name = George Perez
-	email = george.perez.marrero@gmail.com
+    name = George Perez
+    email = george.perez.marrero@gmail.com
 [core]
-	excludesfile = /Users/George/.gitignore
-	trustctime = false
-	precomposeunicode = false
+    excludesfile = /Users/George/.gitignore
+    trustctime = false
+    precomposeunicode = false
 [commit]
     gpgsign = true
 [gpg]
     program = gpg2
 [alias]
-	unstage = reset HEAD --
-	last = log -1 HEAD
+    unstage = reset HEAD --
+    last = log -1 HEAD
     st = status
 [color]
-	ui = auto
+    ui = auto
 [difftool]
-	tool = opendiff
+    tool = opendiff
 [mergetool]
-	tool = opendiff
+    tool = opendiff
