@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gemrc
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitconfig
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitignore
 
-cd Downloads/
+cd ~/Downloads
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub%20(SL).tmTheme
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub.tmTheme
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Jekyll.sublime-settings
