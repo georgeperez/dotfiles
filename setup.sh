@@ -2,11 +2,12 @@
 brew doctor
 brew update
 brew upgrade
-brew install youtube-dl mas zsh git openssh gpg bash-completions zsh-completions ffmpeg wget rbenv
+brew install youtube-dl mas zsh git openssh gpg ffmpeg wget rbenv xz
 brew install caskroom/cask/brew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew cask install iterm2 1password alfred google-chrome logitech-options the-unarchiver sublime-text iina
-mas install 1107421413 924726344 420212497
+brew cask install iterm2 1password alfred google-chrome the-unarchiver sublime-text iina
+mas signin george.perez.marrero@gmail.com
+mas install 409203825 409789998 407963104 1107421413 409201541 402989379 409183694 924726344 420212497
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 cd ~
@@ -19,14 +20,13 @@ wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitconfig
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitignore
 
 cd ~/Downloads
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub%20(SL).tmTheme
+wget "https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub%20(SL).tmTheme"
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub.tmTheme
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Jekyll.sublime-settings
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/MarkdownPreview.sublime-settings
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Preferences.sublime-settings
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Side%20Bar.sublime-settings
 
-defaults write com.apple.Dock showhidden -bool YES 
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2 
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling" 
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true 
@@ -81,4 +81,4 @@ killall Dock
 killall SystemUIServer
 
 
-open /Applications/Alfred\ 2.app /Applications/Alfred\ 2.app/Contents/Preferences/Alfred\ Preferences.app -j
+open /Applications/Alfred\ 3.app /Applications/Alfred\ 3.app/Contents/Preferences/Alfred\ Preferences.app -j
