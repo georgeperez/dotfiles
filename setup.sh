@@ -2,12 +2,19 @@
 brew doctor
 brew update
 brew upgrade
+<<<<<<< Updated upstream
 brew install youtube-dl mas zsh git openssh gpg ffmpeg wget rbenv xz
 brew install caskroom/cask/brew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew cask install iterm2 1password alfred google-chrome the-unarchiver sublime-text iina
 mas signin george.perez.marrero@gmail.com
 mas install 409203825 409789998 407963104 1107421413 409201541 402989379 409183694 924726344 420212497
+=======
+brew install youtube-dl mas zsh git openssh gpg ffmpeg wget rbenv
+brew install caskroom/cask/brew-cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+brew cask install iterm2 1password alfred google-chrome the-unarchiver sublime-text iina
+>>>>>>> Stashed changes
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 cd ~
