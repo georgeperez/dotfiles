@@ -7,8 +7,8 @@ export ZSH=/Users/george/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-DEFAULT_USER="George"
-ZSH_THEME="agnoster"
+DEFAULT_USER="george"
+ZSH_THEME="theunraveler"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,14 +52,13 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew bundler git osx zsh-syntax-highlighting)
+plugins=(brew bundler git osx)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -85,9 +84,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# ZSH Completions
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 source ~/.bash_profile
 
