@@ -20,10 +20,11 @@
 		"*.zip"
 	],
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/GitHub (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
 	"defaultLineEnding": "unix",
 	"default_encoding": "UTF-8",
 	"detect_indentation": false,
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -36,8 +37,8 @@
 		".ink_cache",
 		".tmp"
 	],
-	"font_face": "Menlo",
-	"font_size": 12,
+	"font_face": "SF Mono",
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -47,10 +48,11 @@
 	"show_tab_close_buttons": false,
 	"sidebar_size_12": true,
 	"smart_indent": true,
-	"status_bar_brighter": true,
+	"spacegray_fileicons": true,
+	"spacegray_sidebar_font_normal": true,
+	"spacegray_tabs_font_large": true,
+	"spacegray_tabs_normal": true,
 	"tab_size": 4,
-	"tabs_padding_small": true,
-	"tabs_small": true,
-	"theme": "Afterglow-blue.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
