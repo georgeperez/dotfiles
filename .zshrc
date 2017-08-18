@@ -84,6 +84,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gpm="ssh george@george.perez-marrero.com"
+alias rumad="ssh estudiante@rumad.uprm.edu"
+alias pegasus="ssh georg_pm@pegasus.uprm.edu"
+alias prsn="ssh prsn.uprm.edu"
+alias deploy="git push origin master && git push deploy master"
 
 source ~/.bash_profile
-
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+export PATH=$HOME/.pyenv/versions/anaconda3-4.4.0/bin:$PATH
