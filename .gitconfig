@@ -9,7 +9,7 @@
 [commit]
     gpgsign = true
 [gpg]
-    program = gpg2
+    program = gpg
 [alias]
     unstage = reset HEAD --
     last = log -1 HEAD
@@ -20,3 +20,5 @@
     tool = opendiff
 [mergetool]
     tool = opendiff
+[credential]
+	helper = osxkeychain
