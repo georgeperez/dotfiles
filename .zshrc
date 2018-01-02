@@ -48,6 +48,9 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Uncomment the following line to disable update prompt.
+DISABLE_UPDATE_PROMPT=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -84,13 +87,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gpm="ssh george@george.perez-marrero.com"
+alias gpm="ssh george.perez-marrero.com"
+alias titanpointe="ssh titanpointe.org"
 alias rumad="ssh estudiante@rumad.uprm.edu"
 alias pegasus="ssh georg_pm@pegasus.uprm.edu"
+alias geo="ssh 136.145.123.123"
+alias gps="ssh gps.uprm.edu"
 alias prsn="ssh prsn.uprm.edu"
 alias deploy="git push origin master && git push deploy master"
 
 source ~/.bash_profile
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-export PATH=$HOME/.pyenv/versions/anaconda3-4.4.0/bin:$PATH
+eval "$(nodenv init -)"
+export PATH=$HOME/.pyenv/versions/anaconda3-5.0.0/bin:$PATH
+
+# added by travis gem
+[ -f /Users/george/.travis/travis.sh ] && source /Users/george/.travis/travis.sh
