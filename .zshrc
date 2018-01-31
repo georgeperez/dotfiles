@@ -55,7 +55,7 @@ DISABLE_UPDATE_PROMPT=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew bundler git osx)
+plugins=(ruby brew bundler git osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,14 +87,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gpm="ssh george.perez-marrero.com"
-alias titanpointe="ssh titanpointe.org"
+alias gpm="ssh titanpointe.org"
 alias rumad="ssh estudiante@rumad.uprm.edu"
 alias pegasus="ssh georg_pm@pegasus.uprm.edu"
 alias geo="ssh 136.145.123.123"
 alias gps="ssh gps.uprm.edu"
-alias prsn="ssh prsn.uprm.edu"
-alias deploy="git push origin master && git push deploy master"
+alias deploy="git push deploy master"
 
 source ~/.bash_profile
 eval "$(rbenv init -)"
@@ -102,5 +100,4 @@ eval "$(pyenv init -)"
 eval "$(nodenv init -)"
 export PATH=$HOME/.pyenv/versions/anaconda3-5.0.0/bin:$PATH
 
-# added by travis gem
-[ -f /Users/george/.travis/travis.sh ] && source /Users/george/.travis/travis.sh
+export PATH="/usr/local/sbin:$PATH"
