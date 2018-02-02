@@ -1,9 +1,9 @@
 # This is Git's per-user configuration file.
 [user]
-    name = George Perez
-    email = george.perez.marrero@gmail.com
+	name = George Perez
+	email = george.perez.marrero@gmail.com
 [core]
-    excludesfile = /Users/George/.gitignore
+    excludesfile = /Users/george/.gitignore
     trustctime = false
     precomposeunicode = false
 [commit]
@@ -20,5 +20,8 @@
     tool = opendiff
 [mergetool]
     tool = opendiff
-[credential]
-	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
