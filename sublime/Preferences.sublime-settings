@@ -20,7 +20,7 @@
 		"*.zip"
 	],
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Mariana (SL).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.tmTheme",
 	"defaultLineEnding": "unix",
 	"default_encoding": "UTF-8",
 	"detect_indentation": false,
@@ -59,6 +59,6 @@
 	"spacegray_tabs_font_large": true,
 	"spacegray_tabs_normal": true,
 	"tab_size": 4,
-	"theme": "Spacegray Oceanic.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": false
 }
