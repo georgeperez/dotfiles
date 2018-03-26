@@ -2,10 +2,9 @@
 brew doctor
 brew update
 brew upgrade
-brew install youtube-dl mas zsh git gpg ffmpeg wget rbenv xz
+brew install youtube-dl mas zsh git gpg ffmpeg wget rbenv pyenv nodenv xz jq autoconf yarn nmap automake doctl
 brew install caskroom/cask/brew-cask
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew cask install iterm2 1password alfred google-chrome the-unarchiver sublime-text iina
+brew cask install 1password google-chrome blackscreen-screensaver transmission firefox the-unarchiver sublime-text iina keeping-you-awake
 mas signin george.perez.marrero@gmail.com
 mas install 409203825 409789998 407963104 1107421413 409201541 402989379 409183694 924726344 420212497
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
@@ -18,12 +17,6 @@ wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.bash_profile
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gemrc
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitconfig
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitignore
-
-cd ~/Downloads
-wget "https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub%20(SL).tmTheme"
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/GitHub.tmTheme
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Jekyll.sublime-settings
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/MarkdownPreview.sublime-settings
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Preferences.sublime-settings
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Side%20Bar.sublime-settings
 
@@ -42,6 +35,7 @@ defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screen
 defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true 
 
+chflags nohidden ~/Library
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
@@ -54,12 +48,10 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0.3
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-chflags nohidden ~/Library
-defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock show-process-indicators -bool false
 defaults write com.apple.dock dashboard-in-overlay -bool true
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
@@ -79,6 +71,3 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 sudo systemsetup -setrestartfreeze on
 killall Dock
 killall SystemUIServer
-
-
-open /Applications/Alfred\ 3.app /Applications/Alfred\ 3.app/Contents/Preferences/Alfred\ Preferences.app -j
