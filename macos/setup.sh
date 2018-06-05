@@ -2,23 +2,22 @@
 brew doctor
 brew update
 brew upgrade
-brew install youtube-dl mas zsh git gpg ffmpeg wget rbenv pyenv nodenv xz jq autoconf yarn nmap automake doctl
+brew install youtube-dl mas zsh git gpg ffmpeg wget rbenv xz jq autoconf automake libressl swiftlint vim nano yarn nmap automake doctl
 brew install caskroom/cask/brew-cask
-brew cask install 1password google-chrome blackscreen-screensaver transmission firefox the-unarchiver sublime-text iina keeping-you-awake
+brew tap homebrew/cask-fonts
+brew cask install 1password blackscreen-screensaver transmission sublime-text iina keeping-you-awake font-inconsolata font-source-code-pro font-source-sans-pro
 mas signin george.perez.marrero@gmail.com
-mas install 409203825 409789998 407963104 1107421413 409201541 402989379 409183694 924726344 420212497
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+mas install 409203825 409789998 407963104 409201541 402989379 409183694 420212497
 cd ~
-rm .zshrc .bash_profile .vimrc
+rm .vimrc
 
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.zshrc
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.bash_profile
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gemrc
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitconfig
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitignore
+cd ~/Downloads
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Preferences.sublime-settings
 wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Side%20Bar.sublime-settings
+cd ~
 
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2 
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling" 
