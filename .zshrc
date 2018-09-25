@@ -3,11 +3,13 @@ DEFAULT_USER="george"
 ZSH_THEME="theunraveler"
 HIST_STAMPS="yyyy-mm-dd"
 DISABLE_UPDATE_PROMPT=true
-plugins=(brew bundler git osx vagrant)
+plugins=(brew bundler git osx)
 source $ZSH/oh-my-zsh.sh
 alias ti="ssh titanpointe.org"
+alias rumad="ssh estudiante@rumad.uprm.edu"
 alias pegasus="ssh georg_pm@pegasus.uprm.edu"
-alias deploy="git push origin master && git push deploy master"
+alias brewski="brew upgrade && brew cask upgrade && brew cleanup && brew prune"
+source ~/.bash_profile
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-source ~/.bash_profile
+export PATH="/usr/local/sbin:$PATH"
