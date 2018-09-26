@@ -12,4 +12,7 @@ alias brewski="brew upgrade && brew cask upgrade && brew cleanup && brew prune"
 source ~/.bash_profile
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 export PATH="/usr/local/sbin:$PATH"
