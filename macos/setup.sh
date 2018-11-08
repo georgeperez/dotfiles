@@ -2,22 +2,8 @@
 brew doctor
 brew update
 brew upgrade
-brew install youtube-dl mas zsh git gpg ffmpeg wget rbenv xz jq autoconf automake libressl swiftlint vim nano yarn nmap automake doctl
-brew install caskroom/cask/brew-cask
-brew tap homebrew/cask-fonts
-brew cask install 1password blackscreen-screensaver transmission sublime-text iina keeping-you-awake font-inconsolata font-source-code-pro font-source-sans-pro
-mas signin george.perez.marrero@gmail.com
-mas install 409203825 409789998 407963104 409201541 402989379 409183694 420212497
-cd ~
-rm .vimrc
-
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gemrc
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitconfig
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/.gitignore
-cd ~/Downloads
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Preferences.sublime-settings
-wget https://raw.githubusercontent.com/georgeperez/dotfiles/master/Side%20Bar.sublime-settings
-cd ~
+brew install youtube-dl mas bash gnupg grep zsh git gpg ffmpeg wget wireguard-tools ncdu imagemagick rbenv pyenv nodenv ninja xz jq autoconf automake swiftlint vim nano automake
+brew cask install keepingyouawake iina logitech-options
 
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2 
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling" 
@@ -47,7 +33,7 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0.3
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-defaults write com.apple.dock show-process-indicators -bool false
+defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -56,13 +42,12 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 defaults write com.apple.addressbook ABShowDebugMenu -bool true 
-defaults write com.apple.TextEdit RichText -int 0 
-defaults write com.apple.TextEdit PlainTextEncoding -int 4 
-defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4 
+defaults write com.apple.TextEdit RichText -int 0
+defaults write com.apple.TextEdit PlainTextEncoding -int 4
+defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true 
 defaults write com.apple.appstore WebKitDeveloperExtras -bool true 
-defaults write com.apple.appstore ShowDebugMenu -bool true 
 defaults write com.google.Chrome DisablePrintPreview -bool true 
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true 
 defaults write com.google.Chrome ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*" 
