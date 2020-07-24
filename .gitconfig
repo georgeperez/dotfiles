@@ -1,15 +1,11 @@
 # This is Git's per-user configuration file.
 [user]
-	name = George Perez
-	email = george.perez.marrero@gmail.com
+	name = George Perez Marrero
+	email = george@perez-marrero.com
 [core]
     excludesfile = /Users/george/.gitignore
     trustctime = false
     precomposeunicode = false
-[commit]
-    gpgsign = true
-[gpg]
-    program = gpg
 [alias]
     unstage = reset HEAD --
     last = log -1 HEAD
@@ -25,3 +21,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[pull]
+	rebase = false
