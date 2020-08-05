@@ -3,7 +3,7 @@
 	name = George Perez Marrero
 	email = george@perez-marrero.com
 [core]
-    excludesfile = /Users/george/.gitignore
+    excludesfile = /Users/gpm/.gitignore
     trustctime = false
     precomposeunicode = false
 [alias]
@@ -23,3 +23,5 @@
 	required = true
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main
