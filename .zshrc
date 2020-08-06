@@ -1,4 +1,4 @@
-export ZSH=/Users/george/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
 
 fpath+=~/.zfunc
 
@@ -47,16 +47,15 @@ setopt HIST_FIND_NO_DUPS
 
 #}}}
 ZSH_DISABLE_COMPFIX=true
-DEFAULT_USER="george"
+DEFAULT_USER=$USER
 ZSH_THEME="theunraveler"
 HIST_STAMPS="yyyy-mm-dd"
 DISABLE_UPDATE_PROMPT=true
 plugins=(bundler git osx colorize poetry)
 source $ZSH/oh-my-zsh.sh
-export EDITOR="subl -w"
+#export EDITOR="subl -w"
 alias flush="dscacheutil -flushcache"
-alias tower="open -a /Applications/Tower.app"
-alias dev="cd ~/Developer"
+alias dev="cd ~/Development"
 alias reload="exec $SHELL -l"
 alias rumad="ssh estudiante@rumad.uprm.edu"
 alias brewski="brew upgrade && brew cask upgrade && brew cleanup && rm -rf $(brew --cache)"
