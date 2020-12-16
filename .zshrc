@@ -46,20 +46,18 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_FIND_NO_DUPS
 
 #}}}
+export PATH="/Users/gpm/.pyenv/shims:/Users/gpm/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
 ZSH_DISABLE_COMPFIX=true
+DISABLE_UPDATE_PROMPT=true
 DEFAULT_USER=$USER
 ZSH_THEME="theunraveler"
 HIST_STAMPS="yyyy-mm-dd"
-DISABLE_UPDATE_PROMPT=true
-plugins=(bundler git osx colorize poetry)
+plugins=(bundler git osx colorize)
 source $ZSH/oh-my-zsh.sh
-#export EDITOR="subl -w"
 alias flush="dscacheutil -flushcache"
 alias dev="cd ~/Development"
 alias reload="exec $SHELL -l"
-alias rumad="ssh estudiante@rumad.uprm.edu"
-alias brewski="brew upgrade && brew cask upgrade && brew cleanup && rm -rf $(brew --cache)"
+alias brewski="brew upgrade && brew upgrade --cask && brew cleanup && rm -rf $(brew --cache)"
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
-#eval "$(nodenv init -)"
 eval "$(pyenv init -)"
