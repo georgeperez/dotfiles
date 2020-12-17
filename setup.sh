@@ -4,6 +4,13 @@ brew update
 brew upgrade
 brew bundle install
 
+cd ~
+curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.gemrc
+curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.gitconfig
+curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.gitignore
+curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.vimrc
+curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.zshrc
+
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 3
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling" 
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true 
@@ -51,6 +58,7 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true 
 defaults write com.apple.appstore WebKitDeveloperExtras -bool true 
 sudo systemsetup -setrestartfreeze on
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 killall Dock
 killall SystemUIServer
 killall Finder
