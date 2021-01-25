@@ -1,15 +1,16 @@
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew doctor
-brew update
-brew upgrade
-brew bundle install
-
 cd ~
 curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.gemrc
 curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.gitconfig
 curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.gitignore
 curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.vimrc
 curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/.zshrc
+curl -O https://raw.githubusercontent.com/georgeperez/dotfiles/main/Brewfile
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew doctor
+brew update
+brew upgrade
+brew bundle install
 
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 3
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling" 
@@ -24,6 +25,7 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true 
 
+defaults -currentHost write -g AppleFontSmoothing -int 0
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
