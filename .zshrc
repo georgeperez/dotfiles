@@ -58,6 +58,7 @@ alias flush="dscacheutil -flushcache"
 alias dev="cd ~/Development"
 alias reload="exec $SHELL -l"
 alias brewski="brew upgrade && brew upgrade --cask && brew cleanup && rm -rf $(brew --cache)"
+alias dockerup="docker-compose pull && docker-compose down && docker-compose up -d --force-recreate"
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
