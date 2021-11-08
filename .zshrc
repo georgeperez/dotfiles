@@ -52,13 +52,13 @@ DISABLE_UPDATE_PROMPT=true
 DEFAULT_USER=$USER
 ZSH_THEME="theunraveler"
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(bundler git osx colorize)
+plugins=(bundler git macos colorize)
 source $ZSH/oh-my-zsh.sh
 alias flush="dscacheutil -flushcache"
 alias dev="cd ~/Development"
 alias reload="exec $SHELL -l"
 alias brewski="brew upgrade && brew upgrade --cask && brew cleanup && rm -rf $(brew --cache)"
-alias dockerup="docker-compose pull && docker-compose down && docker-compose up -d --force-recreate"
+alias dockerup="docker compose pull && docker compose down && docker compose up -d --remove-orphans --force-recreate && docker volume prune -f && docker image prune -f"
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
