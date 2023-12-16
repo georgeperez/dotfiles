@@ -4,9 +4,11 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/services"
+tap "yt-dlp/taps"
+brew "xz"
 brew "aria2"
 brew "automake"
-brew "xz"
 brew "cmake"
 brew "ffmpeg"
 brew "git"
@@ -20,58 +22,88 @@ brew "nano"
 brew "ncdu"
 brew "neofetch"
 brew "ninja"
+brew "nodenv"
 brew "pyenv"
 brew "qrencode"
 brew "rbenv"
 brew "thefuck"
+brew "tmux"
 brew "tree"
 brew "vim"
 brew "wget"
-brew "youtube-dl"
+brew "wimlib"
+brew "yt-dlp"
 cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "bartender"
-cask "discord"
-cask "docker"
 cask "firefox"
-cask "font-fira-code"
-cask "font-inter"
 cask "iina"
-cask "istat-menus"
 cask "keepingyouawake"
 cask "keyboardcleantool"
-cask "microsoft-teams"
-cask "plex-media-server"
-cask "signal"
+cask "netnewswire"
+cask "qbittorrent"
 cask "slack"
-cask "steam"
-cask "sublime-text"
-cask "telegram"
 cask "tiles"
-cask "topnotch"
-cask "transmission"
 cask "via"
 cask "visual-studio-code"
 cask "vmware-fusion"
 cask "whatsapp"
 cask "xcodes"
 mas "1Blocker", id: 1365531024
-mas "Amphetamine", id: 937984704
-mas "Apple Configurator 2", id: 1037126344
+mas "1Password for Safari", id: 1569813296
+mas "Apple Configurator", id: 1037126344
 mas "Deliveries", id: 290986013
-mas "Developer", id: 640199958
+mas "Facades", id: 6443868157
+mas "Flighty", id: 1358823008
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
+mas "Motif", id: 1404636482
+mas "Noir", id: 1592917505
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
-mas "Prime Video", id: 545519333
-mas "Redacted", id: 984968384
-mas "Reeder", id: 1529448980
-mas "Shareful", id: 1522267256
+mas "Shazam", id: 897118787
+mas "SponsorBlock for YouTube - Skip Sponsorships", id: 1573461917
 mas "StopTheMadness", id: 1376402589
-mas "TestFlight", id: 899247664
-mas "ToothFairy", id: 1191449274
-mas "WireGuard", id: 1451685025
+mas "StopTheMadness Pro", id: 6471380298
+mas "Velja", id: 1607635845
+vscode "adpyke.vscode-sql-formatter"
+vscode "bencoleman.armview"
+vscode "EditorConfig.EditorConfig"
+vscode "GitHub.github-vscode-theme"
+vscode "GitHub.vscode-pull-request-github"
+vscode "idleberg.applescript"
+vscode "James-Yu.latex-workshop"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azure-devops.azure-pipelines"
+vscode "ms-azuretools.azure-dev"
+vscode "ms-azuretools.vscode-azureappservice"
+vscode "ms-azuretools.vscode-azurecontainerapps"
+vscode "ms-azuretools.vscode-azurefunctions"
+vscode "ms-azuretools.vscode-azureresourcegroups"
+vscode "ms-azuretools.vscode-azurestaticwebapps"
+vscode "ms-azuretools.vscode-azurestorage"
+vscode "ms-azuretools.vscode-azurevirtualmachines"
+vscode "ms-azuretools.vscode-bicep"
+vscode "ms-azuretools.vscode-cosmosdb"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-mssql.data-workspace-vscode"
+vscode "ms-mssql.mssql"
+vscode "ms-mssql.sql-bindings-vscode"
+vscode "ms-mssql.sql-database-projects-vscode"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.azure-account"
+vscode "ms-vscode.azurecli"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.vscode-node-azure-pack"
+vscode "msazurermtools.azurerm-vscode-tools"
+vscode "redhat.vscode-yaml"
+vscode "tomoki1207.pdf"
+vscode "vscode-icons-team.vscode-icons"
