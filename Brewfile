@@ -25,6 +25,7 @@ brew "nodenv"
 brew "pyenv"
 brew "qrencode"
 brew "rbenv"
+brew "speedtest-cli"
 brew "thefuck"
 brew "tmux"
 brew "tree"
@@ -35,48 +36,49 @@ brew "yt-dlp"
 cask "1password"
 cask "alfred"
 cask "appcleaner"
-cask "bartender"
-cask "discord"
+cask "audacity"
+cask "balance-lock"
 cask "firefox"
-cask "iina"
+cask "hiddenbar"
 cask "keepingyouawake"
 cask "keyboardcleantool"
 cask "netnewswire"
-cask "qbittorrent"
+cask "obsidian"
+cask "signal"
 cask "slack"
 cask "tiles"
+cask "transmission"
 cask "via"
 cask "visual-studio-code"
 cask "vmware-fusion"
 cask "whatsapp"
-cask "xcodes"
+cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "1Password for Safari", id: 1569813296
 mas "Apple Configurator", id: 1037126344
 mas "Deliveries", id: 290986013
-mas "Facades", id: 6443868157
 mas "Flighty", id: 1358823008
 mas "GarageBand", id: 682658836
+mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
-mas "Motif", id: 1404636482
 mas "Noir", id: 1592917505
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
+mas "Pure Paste", id: 1611378436
 mas "Shazam", id: 897118787
-mas "SponsorBlock for YouTube - Skip Sponsorships", id: 1573461917
-mas "StopTheMadness", id: 1376402589
+mas "SponsorBlock", id: 1573461917
 mas "StopTheMadness Pro", id: 6471380298
 mas "Velja", id: 1607635845
 vscode "adpyke.vscode-sql-formatter"
 vscode "bencoleman.armview"
-vscode "EditorConfig.EditorConfig"
-vscode "GitHub.github-vscode-theme"
-vscode "GitHub.vscode-pull-request-github"
+vscode "editorconfig.editorconfig"
+vscode "github.github-vscode-theme"
+vscode "github.vscode-pull-request-github"
 vscode "idleberg.applescript"
-vscode "James-Yu.latex-workshop"
+vscode "james-yu.latex-workshop"
 vscode "mechatroner.rainbow-csv"
 vscode "ms-azure-devops.azure-pipelines"
 vscode "ms-azuretools.azure-dev"
@@ -95,6 +97,7 @@ vscode "ms-mssql.data-workspace-vscode"
 vscode "ms-mssql.mssql"
 vscode "ms-mssql.sql-bindings-vscode"
 vscode "ms-mssql.sql-database-projects-vscode"
+vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
