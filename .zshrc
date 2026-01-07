@@ -46,22 +46,31 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_FIND_NO_DUPS
 
 #}}}
-export PATH="/Users/gpm/.pyenv/shims:/Users/gpm/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
+export PATH="/Users/gpm/.pyenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin"
 ZSH_DISABLE_COMPFIX=true
 DISABLE_UPDATE_PROMPT=true
 DEFAULT_USER=$USER
-ZSH_THEME="theunraveler"
+ZSH_THEME="robbyrussell"
 HIST_STAMPS="yyyy-mm-dd"
 plugins=(bundler git macos colorize)
 source $ZSH/oh-my-zsh.sh
 alias flush="dscacheutil -flushcache"
-alias dev="cd ~/Development"
+alias ls="eza"
 alias reload="exec $SHELL -l"
 alias brewski="brew upgrade && brew upgrade --cask && brew cleanup && rm -rf $(brew --cache)"
 alias dockerup="docker compose pull && docker compose down && docker compose up -d --remove-orphans --force-recreate && docker volume prune -f && docker image prune -f"
 alias youtube-dl="yt-dlp"
-alias eleventy="npx @11ty/eleventy"
+alias pn="pnpm"
+alias npm="pnpm"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval $(thefuck --alias)
-eval "$(rbenv init -)"
-eval "$(pyenv init -)"
+eval "$(rv shell init zsh)"
 eval "$(nodenv init -)"
+
+# pnpm
+export PNPM_HOME="/Users/gpm/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
