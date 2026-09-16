@@ -39,7 +39,7 @@ ZSH_THEME="robbyrussell"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Reduced plugin list for faster startup
-plugins=(git mise uv)
+plugins=(git mise bundler uv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,6 +47,7 @@ source $ZSH/oh-my-zsh.sh
 alias flush="dscacheutil -flushcache"
 alias ls="eza"
 alias reload="exec $SHELL -l"
+alias docker="podman"
 alias brewski="brew upgrade && brew upgrade --cask && brew cleanup && rm -rf $(brew --cache)"
 alias dockerup="docker compose pull && docker compose down && docker compose up -d --remove-orphans --force-recreate && docker volume prune -f && docker image prune -f"
 alias youtube-dl="yt-dlp"
