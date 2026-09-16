@@ -15,7 +15,6 @@ brew bundle install
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 3
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling" 
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true 
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool true 
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool true 
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true 
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -25,7 +24,6 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true 
 
-defaults -currentHost write -g AppleFontSmoothing -int 0
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
@@ -36,14 +34,14 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-defaults write NSGlobalDomain AppleShowAllExtensions -bool false
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain com.apple.springing.enabled -bool true 
 defaults write NSGlobalDomain com.apple.springing.delay -float 0.3
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-defaults write com.apple.dock show-process-indicators -bool true
-defaults write com.apple.dock orientation -string right
+defaults write com.apple.dock show-process-indicators -bool false
+defaults write com.apple.dock orientation -string left
 defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.Safari ShowFavoritesBar -bool false
